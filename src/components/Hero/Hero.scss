@@ -1,0 +1,85 @@
+$blue: #2f70fe;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $blue;
+  padding: 15rem 5rem;
+  align-items: center;
+  position: relative;
+
+  padding-top: 20rem;
+  .content {
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+    }
+    h2 {
+      font-weight: 400;
+    }
+    .btn {
+      background-color: black;
+      font-weight: 500;
+      font-size: 30px;
+      padding: 1rem;
+      width: 300px;
+      transition: 0.4s;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  .abs1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .abs2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 830px) {
+  .hero {
+    padding: 15rem 2rem;
+    gap: 3rem;
+    // width: 200px;
+    .abs1,
+    .abs2 {
+      position: static;
+    }
+
+    .content {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      .btn {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    .content {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+}

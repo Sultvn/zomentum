@@ -1,0 +1,109 @@
+$blue: #2f70fe;
+
+.hero3 {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+
+  .card-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 1rem;
+    h1 {
+      font-weight: 600;
+      color: black;
+      font-size: 28px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-weight: 400;
+      color: black;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $blue;
+      transition: 0.4s;
+      padding: 1rem;
+      &:hover {
+        background-color: $blue;
+        color: white;
+      }
+    }
+  }
+
+  .card-img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    &#first,
+    &#fifth,
+    &#tenth {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .hero3 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 5rem 2rem;
+
+    .card-text {
+      align-items: center;
+      p {
+        text-align: center;
+      }
+    }
+    #first {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    #second {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    #third {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    #fourth {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    #fifth {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+    #sixth {
+      grid-column: 1/2;
+      grid-row: 6/7;
+    }
+    #seventh {
+      grid-column: 1/2;
+      grid-row: 7/8;
+    }
+    #eighth {
+      grid-column: 1/2;
+      grid-row: 8/9;
+    }
+    #nineth {
+      grid-column: 1/2;
+      grid-row: 9/10;
+    }
+    #tenth {
+      grid-column: 1/2;
+      grid-row: 10/11;
+    }
+  }
+}
