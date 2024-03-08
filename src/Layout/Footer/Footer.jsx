@@ -4,6 +4,8 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer>
+      <div className="container">
+
       <ul className="top">
         <li className="top__li">
           <h1>Product</h1>
@@ -86,6 +88,8 @@ const Footer = () => {
         <span className="rights">© 2020 Pactora Inc. All rights reserved.</span>
         <span className="flw">Follow us on social</span>
       </div>
+      </div>
+
     </footer>
   );
 };

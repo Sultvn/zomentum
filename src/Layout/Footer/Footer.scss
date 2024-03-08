@@ -7,31 +7,39 @@ footer {
   padding: 5rem;
   color: white;
   background-color: black;
-  .top {
+  .container {
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    &__li {
+    flex-direction: column;
+    gap: 3rem;
+    .top {
       display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      .footer-child {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      &__li {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        li {
-          transition: 0.3s;
-          &:hover {
-            color: $blue;
+        gap: 2rem;
+        .footer-child {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          li {
+            a {
+              transition: 0.3s;
+              &:hover {
+                color: $blue;
+              }
+            }
           }
         }
       }
     }
-  }
-  .bot {
-    display: flex;
-    justify-content: space-between;
+    .bot {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 

@@ -27,6 +27,15 @@ body {
   flex-direction: column;
 }
 
+.App {
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 @media (max-width: 768px) {
   body {
     display: block;
